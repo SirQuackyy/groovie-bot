@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+   
+
+    <title>Groovie</title>
+  </head>
+  <body>
+    <section id="about-bot">
+      <nav>
+        <div class="bot__logo">Groovie</div>
+        <ul class="nav__link--list">
+          <li
+            class="nav__link--anchor link__hover-effect--purple"
+          >
+            About
+            <ul class="nav__link-item--drop">
+              <li class="nav__item--drop" onclick="toggleModal()">About Bot</li>
+              <li class="nav__item--drop">
+                <a class="nav__item-drop--link" href="#commands">Commands</a>
+              </li>
+              <li class="nav__item--drop" onclick="toggleTeamModal()">Team</li>
+            </ul>
+          </li>
+          <li>
+            <a
+              class="nav__link--anchor link__hover-effect--purple"
+              href="#features"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              class="nav__link--anchor link__hover-effect--purple"
+              href="https://discord.com/oauth2/authorize?client_id=975062411327442944&permissions=8&scope=applications.commands%20bot"
+              >Invite</a
+            >
+          </li>
+          <li class="click">
+            <a
+              class="nav__link--anchor"
+              href="#"
+              onclick="toggleContrast()"
+              ><i class="fas fa-adjust"></i></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="flex flex-1">
+          <div class="about-bot__info row">
+            <div class="about-bot__info--container">
+              <figure class="about-bot__picture--mask">
+                <img src="Logo.png" alt=""/>
+              </figure>
+              <h1 class="about-bot__info--title">
+                Yo! I'm <span class="text--pink">Groovie</span>&nbsp;<span
+                  class="wave"
+                  >👋</span
+                >
+              </h1>
+              <p class="about-bot__info--para">
+                I'm a <strong class="text--pink">Music Bot</strong> and unlike the other bots I can hear you
+                and can play song whatever song you tell me to play.
+                <br />
+                Here's
+                <b class="about-bot__info--more" onclick="toggleModal()"
+                  >more about</b
+                >
+                the bot
+              </p>
+            </div>
+          </div>
+        </div>
+        <button id="btnScrollToTop">
+         <a class='button-scroll' href="#"><i class="fas fa-angle-double-up"></i></a></i>
+        </button>
+      </header>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title">Here's more about the bot.</h3>
+          <h4 class="modal__sub-title">Verified Discord Bot.</h4>
+          <p class="modal__para">
+            This bot is made to
+            <b class="text--pink">improve your experience on Discord calls</b>. It has
+            a vast scope of features from
+            <b class="text--pink"> being a good listener and being a great DJ.</b>
+            <br />
+            The bot has been made by
+            <b class="text--pink"> a group of sleep-deprived teenagers</b> and was
+            <b class="text--pink"> made in honor of Groovy </b>. This bot can hear you and play whatever you want it to play, but instead of having to stop gaming, you can simply tell this bot to play it. 
+          </p>
+        </div>
+        <div class="modal__half modal__languages">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__sub-title--languages">
+            <b class="text--pink">Tech</b> used for this project.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--languages">
+            We used a lot of different <b class="text--pink"> technologies</b> to
+            develop this project. They're all listed down below.
+          </h4>
+          <div class="modal__technologies">
+            <figure class="modal__tech">
+              <img
+                class="modal__tech--img"
+                src="assets/javascript.png"
+                alt="JavaScript"
+              />
+              <span class="tech__name">JavaScript</span>
+            </figure>
+            <figure class="modal__tech">
+              <img
+                class="modal__tech--img"
+                src="assets/mongodb.png"
+                alt="MongoDB"
+              />
+              <span class="tech__name">MongoDB</span>
+            </figure>
+            <figure class="modal__tech">
+              <img
+                class="modal__tech--img"
+                src="https://cdn.discordapp.com/attachments/805944778926850110/975115854100430848/unknown.png"
+                alt="DJS"
+              />
+              <span class="tech__name">DJS</span>
+            </figure>
+            <figure class="modal__tech">
+              <img class="modal__tech--img" src="assets/npm.png" alt="NPM" />
+              <span class="tech__name">NPM</span>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="modal__two">
+        <div class="modal__half--two modal__devs">
+          <h3 class="modal__two--title">Developer Team</h3>
+          <h4 class="modal__two-sub--title">
+            These are the developers who helped with the bot.
+          </h4>
+          <p class="modal__two--para">
+            <b class="text--pink">KoolCid#3106</b>
+            <br />
+            <b class="text--pink">TheBardofEntropy#5243</b>
+            <br />
+            <b class="text--pink">SirQuackyy🦆🍞#3919</b>
+            <br />
+            <b class="text--pink">A.J.#4570</b>
+            <br />
+          </p>
+        </div>
+        <div class="modal__half--two modal__designers">
+          <i
+            class="fas fa-times modal__exit click"
+            onclick="toggleTeamModal()"
+          ></i>
+          <h3 class="modal__two--title">Designer Team</h3>
+          <h4 class="modal__two-sub--title">
+            These are the designers of the bot.
+          </h4>
+          <p class="modal__two--para">
+            <b class="text--pink">KoolCid#3106</b>
+            <br />
+            <b class="text--pink">TheBardofEntropy#5243</b>
+            <br />
+            <b class="text--pink">SirQuackyy🦆🍞#3919</b>
+            <br />
+            <b class="text--pink">A.J.#4570</b>
+            <br />
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <h2 class="title">Bot <strong class="text--pink">Features</strong></h2>
+        <div class="features__row">
+          <div class="features__col">
+            <i class="fa fa-bolt icon"></i>
+            <h3 class="sub__title">Fast</h3>
+            <p class="features__para">
+              This is one of the fastest discord bots so make sure to invite it
+            </p>
+          </div>
+          <div class="features__col">
+            <i class="fa fa-microphone icon"></i>
+            <h3 class="sub__title">Voice Activated</h3>
+            <p class="features__para">
+              This bot uses vocal recognition to determine what song you want it to play
+            </p>
+          </div>
+          <div class="features__col">
+            <i class="fa fa-check icon"></i>
+            <h3 class="sub__title">Convenience</h3>
+            <p class="features__para">
+              This bot makes it easier to play music without having to alt tab and stop gaming.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="commands">
+      <h2 class="title">All <strong class="text--pink">Commands</strong></h2>
+      <h3 class="sub__title">Use <strong class="text--pink">slash commands</strong>  to make Groovie join and then use voice commands for the rest </h3>
+      <div class="accordion">
+        <div>
+          <input
+            type="radio"
+            name="example_accordion"
+            id="Moderation"
+            class="accordion__input"
+          />
+          <label for="Moderation" class="accordion__label">Commands</label>
+          <div class="accordion__content">
+            <p class="accordion__text">
+              <strong class="text--pink">Join</strong> - The Music Bot will join the voice channel
+              <br />
+              <strong class="text--pink">Play</strong> - Plays the mentioned track 
+              <br />
+              <strong class="text--pink">Pause</strong> - Pauses the ongoing track
+              <br />
+              <strong class="text--pink">Resume</strong> - Resumes a paused track
+              <br />
+              <strong class="text--pink">Unpause</strong> - Unpauses the paused track
+              <br />
+              <strong class="text--pink">Skip</strong> - Skips the ongoing track
+              <br />
+              <strong class="text--pink">Queue</strong> - Displays the current queue of tracks
+              <br />
+              <strong class="text--pink">Shuffle</strong> - Shuffles the queued tracks 
+              <br />
+              <strong class="text--pink">Remove</strong> - Remove desired track from the queue 
+              <br />
+              <strong class="text--pink">Leave </strong> - The Music Bot leaves the voice channel
+              <br />
+              <strong class="text--pink">Stop </strong> - The Music Bot stops and leaves the voice channel
+              <br />
+              <strong class="text--pink">Disconnect </strong> - The Music Bot disconnect from the voice channel
+              <br />
+              <strong class="text--pink">Lyrics</strong> - Shows the user the lyrics for the current track
+              <br />             
+              <strong class="text--pink">Current</strong> - Shows the progress of the current track 
+              <br />
+            </p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+           <div class="footer__socials">
+            <a class="footer__socials-link" href="https://www.twitch.tv/sirquackyy">
+              <i class="fa fa-twitch" aria-hidden="true"></i></a>
+            <a class="footer__socials-link" href="https://discord.gg/pCRYHUAFRe">
+             <i class="fab fa-discord"></i></a>
+            <a class="footer__socials-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+             <i class="fas fa-music"></i></a>
+         </div>
+         <div class="footer__list">
+           <a href="#" class="footer__link link__hover-effect--purple">Home</a>
+           <a href="#features" class="footer__link link__hover-effect--purple">Features</a>
+           <a href="#about" class="footer__link link__hover-effect--purple" onclick="toggleModal()">About</a>
+         </div>
+         <div class="creds">
+          <a>
+            <div class="music">
+            Music
+            </div> 
+          </a>
+          <a>
+         </a>
+        </div>
+         <div class="footer__copyright">
+           Copyright &copy; Designed By
+           <a
+           target="_blank"
+             href="index.html"
+             ><span class="text--pink"
+             >Burrito Devs</span>  </a>
+             
+         </div>
+         
+       </div>
+     </div>
+    </footer>
+  </body>
+</html>
